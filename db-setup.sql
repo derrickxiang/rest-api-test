@@ -45,3 +45,11 @@ INSERT INTO `products` (`id`, `name`, `description`, `price`, `category_id`, `cr
 (48, 'Bristol Shoes', 'Awesome shoes.', '999', 5, '2016-01-08 06:36:37', '2016-01-08 05:36:37'),
 (60, 'Rolex Watch', 'Luxury watch.', '25000', 1, '2016-01-11 15:46:02', '2016-01-11 14:46:02');
 
+CREATE TABLE `test`.`users` 
+( `id` INT NOT NULL AUTO_INCREMENT , 
+`firstname` VARCHAR(256) NULL , 
+`lastname` VARCHAR(256) NULL ,
+ `email` VARCHAR(256) NULL , 
+ `created` DATETIME NULL , 
+ `modified` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+  `password` VARCHAR(2048) NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
